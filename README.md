@@ -4,6 +4,8 @@ Purpose of this demo is to deploy a OVN load balancer and three backend webserve
 
 ## Setup
 
+A local microcloud can be setup with the `deploy.sh` script.
+
 Ensure the MicroClouds `UPLINK` network has the `ipv4.routes` setting configured so that we can
 assign any of the routed IPs as `network_lb_address_ipv4` to the load balancer:
 
