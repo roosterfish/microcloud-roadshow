@@ -8,11 +8,13 @@ resource "lxd_network" "web" {
     "ipv6.address" = var.network_address_ipv6
     "ipv6.nat" = "true"
   }
+  project = lxd_project.web.name
 }
 
 resource "lxd_network_lb" "web_to_backend" {
   network = lxd_network.web.name
   listen_address = var.network_lb_address_ipv4
+  project = lxd_project.web.name
 
   dynamic "backend" {
     for_each = lxd_instance.web_backend

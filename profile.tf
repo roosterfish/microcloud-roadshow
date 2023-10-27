@@ -9,6 +9,7 @@ runcmd:
   - python3 -m http.server 80
 EOF
   }
+  project = lxd_project.web.name
   device {
     type = "disk"
     name = "root"

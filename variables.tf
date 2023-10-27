@@ -12,6 +12,9 @@ variable "network_uplink" {
     type = string
     default = "UPLINK"
 }
+variable "network_uplink_allowed_subnet" {
+    type = string
+}
 variable "network_address_ipv4" {
     type = string
 }
