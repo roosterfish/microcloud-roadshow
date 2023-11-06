@@ -5,9 +5,6 @@ variable "remote_name" {
 variable "remote_address" {
     type = string
 }
-variable "remote_password" {
-    type = string
-}
 variable "network_uplink" {
     type = string
     default = "UPLINK"
